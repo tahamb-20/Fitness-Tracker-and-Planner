@@ -49,7 +49,7 @@ label {
     color: #333;
 }
 
-input {
+input, #user-name, #user-age, #user-weight {
     width: calc(100% - 20px);
     padding: 12px;
     margin-bottom: 20px;
@@ -58,7 +58,7 @@ input {
     box-sizing: border-box;
 }
 
-button {
+button, #calorie-calculation button, #workout-plan button {
     background-color: #3498db;
     color: #fff;
     padding: 15px 25px;
@@ -66,19 +66,18 @@ button {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 15px;
 }
 
-button:hover {
+button:hover, #calorie-calculation button:hover, #workout-plan button:hover {
     background-color: #2184b4;
 }
 
-#user-name,
-#user-age,
-#user-weight {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
+#calorie-calculation,
+#workout-plan {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }

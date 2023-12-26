@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,6 @@
         </header>
         <div id="app">
             <div id="exercise-list">
-                <!-- Exercise list will be displayed here -->
             </div>
             <div id="add-exercise-form">
                 <h2>Add New Exercise</h2>
@@ -43,14 +42,39 @@
             <button onclick="updateUserName()">Update</button>
         </div>
     </div>
-<div id="update-info-form">
-    <h2>Update Personal Information</h2>
-    <label for="user-age">Update Age:</label>
-    <input type="number" id="user-age" placeholder="Enter your age">
-    <button onclick="updateUserAge()">Update Age</button>
-    <label for="user-weight">Update Weight:</label>
-    <input type="number" id="user-weight" placeholder="Enter your weight">
-    <button onclick="updateUserWeight()">Update Weight</button>
+
+    <div id="update-info-form">
+        <h2>Update Personal Information</h2>
+        <label for="user-age">Update Age:</label>
+        <input type="number" id="update-user-age" placeholder="Enter your age">
+        <button onclick="updateUserAge()">Update Age</button>
+        <label for="update-user-weight">Update Weight:</label>
+        <input type="number" id="update-user-weight" placeholder="Enter your weight">
+        <button onclick="updateUserWeight()">Update Weight</button>
+    </div>
+
+
+<div id="calorie-calculation">
+    <h2>Calorie Calculation</h2>
+    <label for="user-gender">Gender:</label>
+    <select id="user-gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <label for="user-age">Age:</label>
+    <input type="number" id="user-age" placeholder="Enter your age" required>
+    <label for="user-weight">Weight (kg):</label>
+    <input type="number" id="user-weight" placeholder="Enter your weight" required>
+    <label for="user-height">Height (cm):</label>
+    <input type="number" id="user-height" placeholder="Enter your height" required>
+    <button onclick="calculateCalories()">Calculate Calories</button>
+    <p id="calories-result"></p>
+</div>
+
+<div id="workout-plan">
+    <h2>Workout Plan</h2>
+    <p>Your personalized workout plan will be displayed here.</p>
+    <button onclick="generateWorkoutPlan()">Generate Workout Plan</button>
 </div>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
