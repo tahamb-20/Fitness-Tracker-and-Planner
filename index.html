@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="personal.css">
+    <title>Fitness Tracker and Planner</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fitness Tracker</h1>
+        </header>
+        <div id="app">
+            <div id="exercise-list">
+                <!-- Exercise list will be displayed here -->
+            </div>
+            <div id="add-exercise-form">
+                <h2>Add New Exercise</h2>
+                <form>
+                    <label for="exercise-name">Exercise Name:</label>
+                    <input type="text" id="exercise-name" placeholder="Enter exercise name" required>
+                    <label for="exercise-type">Exercise Type:</label>
+                    <input type="text" id="exercise-type" placeholder="Enter exercise type" required>
+                    <button type="button" onclick="addExercise()">Add Exercise</button>
+                </form>
+            </div>
+            <div id="completed-workouts">
+                <h2>Completed Workouts</h2>
+            </div>
+        </div>
+    </div>
+    <div id="personal-block">
+        <h2>Personal Information</h2>
+        <div id="user-info">
+            <p><strong>Name:</strong> <span id="display-name">Taha mbarek</span></p>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Weight:</strong> 85 kg</p>
+        </div>
+        <div id="update-name-form">
+            <label for="user-name">Update Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name">
+            <button onclick="updateUserName()">Update</button>
+        </div>
+    </div>
+<div id="update-info-form">
+    <h2>Update Personal Information</h2>
+    <label for="user-age">Update Age:</label>
+    <input type="number" id="user-age" placeholder="Enter your age">
+    <button onclick="updateUserAge()">Update Age</button>
+    <label for="user-weight">Update Weight:</label>
+    <input type="number" id="user-weight" placeholder="Enter your weight">
+    <button onclick="updateUserWeight()">Update Weight</button>
+</div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>
