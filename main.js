@@ -93,9 +93,10 @@ function updateUserWeight() {
 }
 
 // Call the displayExercises function when the page loads
-(document).ready(function() {
+$(function() {
     displayExercises();
 });
+
 
 function calculateCalories() {
     const userGender = $('#user-gender').val();

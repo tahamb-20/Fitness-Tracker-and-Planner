@@ -1,83 +1,121 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
 }
 
 .container {
-    text-align: center;
-    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 15px;
-    border-radius: 8px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
+h1 {
+    color: #333;
+}
+
 #app {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #exercise-list,
-#completed-workouts,
 #add-exercise-form,
+#completed-workouts,
+#personal-block,
+#update-info-form,
+#calorie-calculation,
+#workout-plan {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+select,
+button {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#personal-block,
+#update-info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-info {
+    margin-bottom: 15px;
+}
+
+#calorie-calculation,
+#workout-plan {
+    text-align: center;
+}
+
+#calories-result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#calorie-calculation select,
+#calorie-calculation input {
+    margin-bottom: 10px;
+}
+
+#calorie-calculation button,
+#workout-plan button {
+    background-color: #007bff;
+}
+
+#calorie-calculation button:hover,
+#workout-plan button:hover {
+    background-color: #0056b3;
+}
+
 #update-name-form,
 #update-info-form {
     margin-top: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#update-name-form button,
+#update-info-form button {
+    background-color: #ffc107;
 }
 
-label {
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-input, #user-name, #user-age, #user-weight {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-button, #calorie-calculation button, #workout-plan button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 15px;
-}
-
-button:hover, #calorie-calculation button:hover, #workout-plan button:hover {
-    background-color: #2184b4;
-}
-
-#calorie-calculation,
-#workout-plan {
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+#update-name-form button:hover,
+#update-info-form button:hover {
+    background-color: #d39e00;
 }
