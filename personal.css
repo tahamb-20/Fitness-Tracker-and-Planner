@@ -77,7 +77,7 @@ body{
 header{
   min-height: 100vh;
   background:linear-gradient(rgba(24, 2, 27, 0.8), rgba(162,0,193,0.3)),
-  url(images/hero2.jpg)center/cover fixed no-repeat;
+  center/cover fixed no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -205,75 +205,6 @@ nav{
 }
 /*=========About Section======*/
 /*section{padding: 80px 0;}*/
-
-#exercise-filter {
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-#app {
-  margin-top: 20px;
-}
-
-#exercise-list {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-#add-exercise-form {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 5px;
-}
-
-input {
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
-button.delete-button {
-  background-color: #ff6666;
-  color: #fff;
-}
-
-#completed-workouts {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-#calorie-calculation {
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-select,
-input[type="number"] {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
-#calories-result {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
 .section-center{width: 80vw;
   padding: 4rem 0;
   width: 80vw;
@@ -328,7 +259,8 @@ font-weight: lighter;}
 /* Responsive*/
 @media screen and (min-width: 576px){.client-center{display: flex; flex-wrap: wrap;
 justify-content: space-between;} .testimonial{flex: 0 0 calc(35% - 3em);}}
-
+/*============End of testimonial==========*/
+/*============Our Classes Section===========*/
 
 #classes{background:#4e004e; padding: 40px;}
 #classes .title{font-size: 60px;text-transform: capitalize;
@@ -338,11 +270,14 @@ color:#f5f5f5;text-align: center; margin: 25px 0 20px 0;}
 #classes img{width: 100%;display: block;}
 .img-container{position: relative;}
 .class-item h4{margin-top: 10px;margin-left: 180px;}
+/*Responsive*/
 @media screen and (min-width:576px){.classes-container{display: grid;
 grid-template-columns: repeat(2, 1fr); grid-column-gap: 1em;
 grid-row-gap: 1em;}}
 @media screen and (min-width:992px){.classes-container{display: grid;
 grid-template-columns: repeat(3, 1fr);grid-column-gap: 1em;grid-row-gap: 1em;}}
+/*End of Classes======*/
+/*===========Subscription=========*/
 
 #subscribe{padding: 40px;background: #ffff;}
 #subscribe .title{font-size: 60px;text-transform: capitalize; color:#1b001b;
@@ -357,13 +292,94 @@ border: 1px solid #1b001b;}
 .btn-submit{border-left: none;cursor: pointer;background: #1b001b;
 color: #ffff;}
 .btn-submit:hover{color: #ffff;background-color: #4e004e;}
+
+/*=======end of Subscription==========*/
+/*=======Footer========*/
 footer{background-color:#1b001b;padding: 20px;display: flex;
 flex-wrap: wrap; justify-content: space-between; align-items: baseline;}
 .footer-text {text-transform: uppercase;font-size: 15px;color: #ffff;
 margin-bottom: 10px;}
 .terms{text-transform: uppercase;font-size: 15px;color: #ffff;
 margin-bottom: 10px; justify-content: space-between;}
+
+
+.header {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+  text-transform: uppercase;
+  color: #050202;
+  letter-spacing:5px;
+  border: 3px solid #f5f5f5;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+button.delete-button {
+  background-color: #ff6666;
+  color: #080303;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Section Styles */
+.section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Specific Section Styles */
+#exercise-filter,
+#add-exercise-form,
+#exercise-list,
+#completed-workouts,
+#calorie-calculation {
+  margin-bottom: 20px;
+}
+
+#calories-result {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+#exercise-filter{
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Layout Styles */
 .container {
-  max-width: 800px;
+  width: 80vw;
+  padding: 4rem 0;
   margin: 0 auto;
+  max-width: 1170px;
 }
