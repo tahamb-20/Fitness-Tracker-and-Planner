@@ -3,80 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
     <link rel="stylesheet" href="personal.css">
-    <title>Fitness Tracker and Planner</title>
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Fitness Tracker</h1>
-        </header>
-        <div id="app">
-            <div id="exercise-list">
+    <header>
+        <nav>
+            <div class="nav-container">
+                <img src="fitness tracker.jpg" alt="logo" class="logo">
+                <div class="btn">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
-            <div id="add-exercise-form">
-                <h2>Add New Exercise</h2>
-                <form>
-                    <label for="exercise-name">Exercise Name:</label>
-                    <input type="text" id="exercise-name" placeholder="Enter exercise name" required>
-                    <label for="exercise-type">Exercise Type:</label>
-                    <input type="text" id="exercise-type" placeholder="Enter exercise type" required>
-                    <button type="button" onclick="addExercise()">Add Exercise</button>
-                </form>
-            </div>
-            <div id="completed-workouts">
-                <h2>Completed Workouts</h2>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">The Gym</a></li>
+                <li><a href="">Groups</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-title">
+            <div class="main-text">
+                <h1>Fitness Tracker </h1>
+                <p></p>
+                <a href="#" class="main-btn">Find a group</a>
             </div>
         </div>
-    </div>
-    <div id="personal-block">
-        <h2>Personal Information</h2>
-        <div id="user-info">
-            <p><strong>Name:</strong> <span id="display-name">Taha mbarek</span></p>
-            <p><strong>Age:</strong> 20</p>
-            <p><strong>Weight:</strong> 85 kg</p>
+    </header>
+
+    <section class="about">
+        <div class="about-center section-center">
+            <article class="about-info">
+                <div>
+                    <h2>Welcome to our site</h2>
+                    <p class="abt-text">A Fitness Tracker and Planner is a comprehensive application designed to assist individuals in monitoring, planning, and optimizing their fitness routines. This digital tool aims to enhance the user's overall well-being by providing features that support exercise tracking, goal setting, and personalized planning. Below is a detailed description of the key components and functionalities of a Fitness Tracker and Planner</p>
+                    <a href="#" class="about-btn">Find a Trainee</a>
+                </div>
+            </article>
+            <article class="about-img">
+                <div class="about-img-container">
+                    <img src="mh-3-23-coleman-1648059910.png" class="about-img" alt="about"/>
+                </div>
+            </article>
         </div>
-        <div id="update-name-form">
-            <label for="user-name">Update Name:</label>
-            <input type="text" id="user-name" placeholder="Enter your name">
-            <button onclick="updateUserName()">Update</button>
+    </section>
+
+    <section id="workout">
+        <div class="section-center">
+            <div class="work-title">
+                <h3 class="title">Why Work Out Here</h3>
+            </div>
+            <div class="work-center">
+                <article class="service">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Boost your fitness</h3>
+                    <p>no pain no gain.</p>
+                </article>
+                <!-- End of workout=========== -->
+                <!-- workout detail -->
+                <article class="service">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Mindful training</h3>
+                    <p>work smarter no harder.</p>
+                </article>
+                <article class="service">
+                    <i class="fas fa-battery-three-quarters"></i>
+                    <h3>Core Strength</h3>
+                    <p>we will help you to find your balance</p>
+                </article>
+                <article class="service">
+                    <i class="fas fa-smile-beam"></i>
+                    <h3>Positivity</h3>
+                    <p>.</p>
+                </article>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="update-info-form">
-        <h2>Update Personal Information</h2>
-        <label for="user-age">Update Age:</label>
-        <input type="number" id="update-user-age" placeholder="Enter your age">
-        <button onclick="updateUserAge()">Update Age</button>
-        <label for="update-user-weight">Update Weight:</label>
-        <input type="number" id="update-user-weight" placeholder="Enter your weight">
-        <button onclick="updateUserWeight()">Update Weight</button>
-    </div>
+    <section id="testimonial">
+        <div class="section-center">
+            <!-- title-============ -->
+            <div>
+                <h3 class="title">the best of all the time(G.O.A.T)</h3>
+            </div>
+            <div class="client-center">
+                <article class="testimonial">
+                    <h3>ronnie coleman</h3>
+                    <img src="photo_23215111_1.jpg" alt="image1">
+                    <p>The winner of the Mr. Olympia title for eight consecutive years, he is widely regarded as either the greatest bodybuilder of all time.</p>
+                </article>
+                <article class="testimonial">
+                    <h3>Chris Bumsted</h3>
+                    <img src="Chris-Bumstead-Bio.jpeg" alt="image1">
+                    <p>Bumstead is the reigning five-time Mr. Olympia Classic Physique Champion, winning five consecutive titles from 2019 to 2023.</p>
+                </article>
+                <!-- end of Testimonial -->
+                <!-- Testimonial Start -->
+                <article class="testimonial">
+                    <h3>Big Ramy</h3>
+                    <img src="téléchargement.jpeg" alt="image1">
+                    <p>Elssbiay made his IFBB Pro-debut at the New York Pro, which he won.In 2020 and 2021, he won the Mr. Olympia contest.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
+    <section id="classes">
+        <div class="section-center">
+            <div>
+                <h3 class="title">Our Classes</h3>
+            </div>
+            <div class="classes-container">
+                
+                    </div>
+                    <div class="container">
+                        <h2>Bodybuilding Exercise Filter</h2>
+                        <div id="exercise-filter">
+                            <button onclick="filterExercises('all')">All</button>
+                            <button onclick="filterExercises('chest')">Chest</button>
+                            <button onclick="filterExercises('back')">Back</button>
+                            <button onclick="filterExercises('legs')">Legs</button>
+                        </div>
+                    </div>
+                    </div>
+                </article>
+            <div id="app">
+                <div id="exercise-list"></div>
+                <div id="add-exercise-form">
+                    <h2>Add New Exercise</h2>
+                    <form>
+                        <label for="exercise-name">Exercise Name:</label>
+                        <input type="text" id="exercise-name" placeholder="Enter exercise name" required>
+                        <label for="exercise-type">Exercise Type:</label>
+                        <input type="text" id="exercise-type" placeholder="Enter exercise type" required>
+                        <button type="button" onclick="addExercise()">Add Exercise</button>
+                        <button class="delete-button" onclick="deleteExercise(this)">Delete</button>
+                    </form>
+                </div>
+                <div id="completed-workouts">
+                    <h2>Completed Workouts</h2>
+                </div>
+            </div>
 
-<div id="calorie-calculation">
-    <h2>Calorie Calculation</h2>
-    <label for="user-gender">Gender:</label>
-    <select id="user-gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select>
-    <label for="user-age">Age:</label>
-    <input type="number" id="user-age" placeholder="Enter your age" required>
-    <label for="user-weight">Weight (kg):</label>
-    <input type="number" id="user-weight" placeholder="Enter your weight" required>
-    <label for="user-height">Height (cm):</label>
-    <input type="number" id="user-height" placeholder="Enter your height" required>
-    <button onclick="calculateCalories()">Calculate Calories</button>
-    <p id="calories-result"></p>
-</div>
-
-<div id="workout-plan">
-    <h2>Workout Plan</h2>
-    <p>Your personalized workout plan will be displayed here.</p>
-    <button onclick="generateWorkoutPlan()">Generate Workout Plan</button>
-</div>
-    <script src="main.js"></script>
+            <div id="calorie-calculation">
+                <h2>Calorie Calculation</h2>
+                <label for="user-gender">Gender:</label>
+                <select id="user-gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="user-age">Age:</label>
+                <input type="number" id="user-age" placeholder="Enter your age" required>
+                <label for="user-weight">Weight (kg):</label>
+                <input type="number" id="user-weight" placeholder="Enter your weight" required>
+                <label for="user-height">Height (cm):</label>
+                <input type="number" id="user-height" placeholder="Enter your height" required>
+                <button onclick="calculateCalories()">Calculate Calories</button>
+                <p id="calories-result"></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <h4>Copy right &copy; 2024. All rights reserved</h4>
+        </div>
+        <div class="terms">
+            <h4>Privacy & Terms &nbsp; Contact</h4>
+        </div>
+        
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
+
